@@ -1,0 +1,17 @@
+TC_ID,Title,Module,Priority,Steps,Expected Result
+TC-001,Valid login,Login,P1,"1. Open login page 2. Enter valid username 3. Enter valid password 4. Click login","User should be logged in and redirected to products page"
+TC-002,Invalid login with wrong password,Login,P1,"1. Open login page 2. Enter valid username 3. Enter wrong password 4. Click login","Error message should be displayed and login should fail"
+TC-003,Login with trailing space in username,Login,P3,"1. Open login page 2. Enter username with trailing space 3. Enter valid password 4. Click login","System should handle input correctly (currently login fails)"
+TC-004,Invalid login with wrong username,Login,P1,"1. Open login page 2. Enter wrong username 3. Enter valid password 4. Click login","Error message should be displayed and login should fail"
+TC-005,Invalid login with wrong username and password,Login,P2,"1. Open login page 2. Enter wrong username 3. Enter wrong password 4. Click login","Error message should be displayed and login should fail"
+TC-006,Login with empty fields,Login,P1,"1. Open login page 2. Leave username and password empty 3. Click login","Error message should be displayed and login should fail"
+TC-007,Add product to cart,Cart,P1,"1. Login with valid credentials 2. Click 'Add to cart' on a product","Product should be added to cart, button should change to 'Remove', cart icon count should increase by 1"
+TC-008,Remove product from cart,Cart,P1,"1. Login 2. Add product to cart 3. Click 'Remove' button","Product should be removed, button should change back to 'Add to cart', cart count should decrease"
+TC-009,Add multiple products to cart,Cart,P1,"1. Login 2. Add 2 or more products","All selected products should be added, cart icon should reflect correct count"
+TC-010,Verify cart page items,Cart,P1,"1. Login 2. Add product 3. Click cart icon","Cart page should display correct product(s), name, price and quantity"
+TC-011,Verify product quantity in cart,Cart,P2,"1. Login 2. Add product to cart 3. Open cart page","Product quantity should be fixed at 1 and no option to modify quantity should be available"
+TC-012,Checkout with valid details,Checkout,P1,"1. Login 2. Add product to cart 3. Open cart 4. Click Checkout 5. Enter valid first name, last name and postal code 6. Click Continue","User should proceed to checkout overview page"
+TC-013,Checkout with empty required fields,Checkout,P1,"1. Login 2. Add product to cart 3. Open cart 4. Click Checkout 5. Leave fields empty 6. Click Continue","Error message should be displayed and user should remain on checkout information page"
+TC-014,Checkout with invalid characters in name fields,Checkout,P2,"1. Login 2. Add product to cart 3. Open cart 4. Click Checkout 5. Enter numbers or symbols in first name/last name 6. Click Continue","System should reject invalid name input or display validation error"
+TC-015,Checkout with invalid postal code format,Checkout,P2,"1. Login 2. Add product to cart 3. Open cart 4. Click Checkout 5. Enter alphabetic or overly long postal code 6. Click Continue","System should reject invalid postal code or display validation error"
+
