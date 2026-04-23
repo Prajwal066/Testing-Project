@@ -36,3 +36,7 @@ The following functional areas were tested:
 
 ### Access Application
 https://www.saucedemo.com/
+
+
+
+The Readme.md inside the qa_portfolio_saucedemo explains in details of the p
